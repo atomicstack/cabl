@@ -1,7 +1,8 @@
+#!/usr/bin/env python2
+
 from pycabl import *
 import time
 import os, sys
-
 
 
 class CablClient:
