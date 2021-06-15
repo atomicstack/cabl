@@ -9,7 +9,7 @@
 #  Device Tester                                                                                   #
 # ------------------------------------------------------------------------------------------------ #
 
-project(device-test)
+project(amid)
 
 set(VERSION_RESOURCES "")
 if(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
@@ -25,16 +25,16 @@ if(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
 endif(${CMAKE_SYSTEM_NAME} MATCHES "Windows")
 
 SET(
-  Examples_DeviceTest_FILES
+  Examples_Amid_FILES
     main.cpp
-    DeviceTest.h
-    DeviceTest.cpp
+    Amid.h
+    Amid.cpp
     ${VERSION_RESOURCES}
 )
 
 add_executable(
   ${PROJECT_NAME}
-  ${Examples_DeviceTest_FILES}
+  ${Examples_Amid_FILES}
 )
 
 set_target_properties(

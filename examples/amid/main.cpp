@@ -8,7 +8,7 @@
 #include <cstdio>
 #include <thread>
 
-#include "DeviceTest.h"
+#include "Amid.h"
 
 
 using namespace sl;
@@ -18,12 +18,13 @@ using namespace sl::cabl;
 
 int main(int argc, const char* argv[])
 {
-  DeviceTest deviceTest;
+  Amid amid;
 
-  std::cout << "Type 'q' and hit ENTER to quit." << std::endl;
+  M_LOG("Type 'q' and hit ENTER to quit.");
 
   while (std::cin.get() != 'q')
   {
+    // std::cout << "yielding..." << std::endl;
     std::this_thread::yield();
   }
 
